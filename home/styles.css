@@ -1,0 +1,54 @@
+:root{
+    --BackGroundBlack: #0d0d0e;
+    --BackGround: #ebf2ff;
+    --Border: #a3b0c0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: var(--BackGroundBlack);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: absolute;
+    display: flex;
+    width: 1280px;
+    height: 720px;
+    border: 4px solid var(--Border);
+    border-radius: 25px;
+    background: var(--BackGround);
+}
+.Left-bar{
+    position: absolute;
+    border-right: 2px solid var(--Border);
+    width: 70px;
+    height: 100%;
+    transition: 0.3s ease 0.2s;
+}
+.Left-bar:hover {
+    width: 170px;
+}
+.Right-bar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 2px solid var(--Border);
+    width: 200px;
+    height: 100%;
+}
+.Buttons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: var(--Border);
+}
