@@ -27,21 +27,23 @@ body{
 }
 .Left-bar{
     position: absolute;
+    left: 0;
     border-right: 2px solid var(--Border);
-    width: 70px;
+    width: 80px;
     height: 100%;
     transition: 0.3s ease 0.2s;
-}
-.Left-bar:hover {
-    width: 170px;
 }
 .Right-bar{
     position: absolute;
     right: 0;
-    top: 0;
     border-left: 2px solid var(--Border);
-    width: 200px;
+    width: 220px;
     height: 100%;
+}
+.Mini-profile {
+    width: 220px;
+    height: 135px;
+    border-bottom: 1px solid var(--Border);
 }
 .Buttons{
     position: absolute;

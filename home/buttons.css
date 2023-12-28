@@ -2,7 +2,8 @@
     --BackGroundBlack: #0d0d0e;
     --BackGround: #ebf2ff;
     --Border: #a3b0c0;
-    --button: #dce6f8;
+    --Button: #dce6f8;
+    --ButtonHover: #e9f0fd;
 }
 *{
     margin: 0;
@@ -10,12 +11,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .Buttons button{
-    width: 100%;
+    width: 70px;
     height: 70px;
     border: 1px solid var(--Border);
     border-radius: 35px;
-    background: var(--button);
+    background: var(--Button);
     margin: 10px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.3s ease 0.1s;
+}
+.Buttons button:hover {
+    background: var(--ButtonHover);
 }
