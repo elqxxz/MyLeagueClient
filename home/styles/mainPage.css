@@ -1,0 +1,35 @@
+#Main-Page{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    height: 100%;
+    bottom: 0;
+}
+#Play-Page{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    height: 100%;
+    bottom: 0;
+}
+#Shop-Page{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    height: 100%;
+    bottom: 0;
+}
+#Loot-Page{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    height: 100%;
+    bottom: 0;
+}
+#Event-Page{
+    position: absolute;
+    display: flex;
+    width: 980px;
+    height: 100%;
+    bottom: 0;
+}

@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="buttons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/mainPage.css" />
+
+    <script src="scripts/PagesRefs.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <title>My version of League client</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <aside class="Left-bar">
-            <div class="Buttons">
-             <button id="Play-Button" class="Play-Button"></button>
-             <button id="Shop-Button" class="Shop-Button"></button>
-             <button id="Loot-Button" class="Loot-Button"></button>
-             <button id="Event-Button" class="Event-Button"></button>
-            </div>
-        </aside>
-        <aside class="Right-bar">
-            <div class="Mini-profile"></div>
-            <div class="Friend-list"></div>
-        </aside>
+      <aside class="Left-bar">
+        <div class="Buttons">
+          <button id="Play-Button" class="InActive" onclick="GetDetails(this)">
+            <ion-icon name="play-outline" class="Play-Btn-Logo"></ion-icon>
+          </button>
+          <button id="Shop-Button" class="InActive" onclick="GetDetails(this)">
+            <ion-icon name="bag-outline" class="Shop-Btn-Logo"></ion-icon>
+          </button>
+          <button id="Loot-Button" class="InActive" onclick="GetDetails(this)">
+            <ion-icon name="briefcase-outline" class="Loot-Btn-Logo"></ion-icon>
+          </button>
+          <button id="Event-Button" class="InActive" onclick="GetDetails(this)">
+            <ion-icon name="game-controller-outline" class="Event-Btn-Logo"></ion-icon>
+          </button>
+        </div>
+      </aside>
+      <aside class="Right-bar">
+        <div class="Mini-profile"></div>
+        <div class="Friend-list"></div>
+      </aside>
+      <main>
+        <div id="Main-Page" class="shown"></div>
+        <div id="Play-Page" class="hidden"></div>
+        <div id="Shop-Page" class="hidden"></div>
+        <div id="Loot-Page" class="hidden"></div>
+        <div id="Event-Page" class="hidden"></div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
