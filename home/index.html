@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/mainPage.css" />
 
     <script src="scripts/PagesRefs.js"></script>
+    <script src="scripts/MainPageTabs.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -39,12 +40,20 @@
       <main>
         <div id="Main-Page" class="shown">
           <div id="MainContainer">
+            <div id="PatchNotePage" class="shown">
 
+            </div>
+            <div id="EsportsPage" class="hidden">
+
+            </div>
+            <div id="MerchPage" class="hidden">
+
+            </div>
           </div>
           <div id="BottomBar">
-            <button id="PatchNote" class="Tabs"></button>
-            <button id="Esports" class="Tabs"></button>
-            <button id="Merch" class="Tabs"></button>
+            <button id="PatchNoteBtn" class="Active" onclick="BottomBarBtnClick(this)">Patch Notes</button>
+            <button id="EsportsBtn" class="InActive" onclick="BottomBarBtnClick(this)">Esports</button>
+            <button id="MerchBtn" class="InActive" onclick="BottomBarBtnClick(this)">Merch</button>
           </div>
         </div>
         <div id="Play-Page" class="hidden">

@@ -1,8 +1,6 @@
 function GetDetails(obj) {
     console.log(obj.id);
 
-    const btn = document.getElementById(obj.id);
-
     const mainPageStatus = document.getElementById('Main-Page').className;
     const playPageStatus = document.getElementById('Play-Page').className;
     const shopPageStatus = document.getElementById('Shop-Page').className;
