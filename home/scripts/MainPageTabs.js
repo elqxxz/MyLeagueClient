@@ -3,10 +3,6 @@ function BottomBarBtnClick(btn) {
     const EsportsBtn = document.getElementById('EsportsBtn').className;
     const MerchBtn = document.getElementById('MerchBtn').className;
 
-    const PatchNotePage = document.getElementById('PatchNotePage').className;
-    const EsportsPage = document.getElementById('EsportsPage').className;
-    const MerchPage = document.getElementById('MerchPage').className;
-
     switch (btn.id) {
         case 'PatchNoteBtn':
             if (PatchNoteBtn == 'InActive') {

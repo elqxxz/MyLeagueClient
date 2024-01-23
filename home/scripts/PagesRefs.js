@@ -1,5 +1,5 @@
-function GetDetails(obj) {
-    console.log(obj.id);
+function LeftBarBtn(btn) {
+    console.log(btn.id);
 
     const mainPageStatus = document.getElementById('Main-Page').className;
     const playPageStatus = document.getElementById('Play-Page').className;
@@ -7,7 +7,7 @@ function GetDetails(obj) {
     const lootPageStatus = document.getElementById('Loot-Page').className;
     const eventPageStatus = document.getElementById('Event-Page').className;
 
-    switch (obj.id) {
+    switch (btn.id) {
         case "Play-Button":
             switch (mainPageStatus) {
                 case "shown":
