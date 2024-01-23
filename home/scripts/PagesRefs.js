@@ -1,7 +1,7 @@
 function LeftBarBtn(btn) {
     console.log(btn.id);
 
-    const mainPageStatus = document.getElementById('Main-Page').className;
+    const HomePageStatus = document.getElementById('Home-Page').className;
     const playPageStatus = document.getElementById('Play-Page').className;
     const shopPageStatus = document.getElementById('Shop-Page').className;
     const lootPageStatus = document.getElementById('Loot-Page').className;
@@ -11,7 +11,7 @@ function LeftBarBtn(btn) {
         case "Play-Button":
             switch (mainPageStatus) {
                 case "shown":
-                        document.getElementById("Main-Page").className = "hidden";
+                        document.getElementById("Home-Page").className = "hidden";
                         document.getElementById("Play-Page").className = "shown";
 
                         document.getElementById("Play-Button").className = "Active";
@@ -19,7 +19,7 @@ function LeftBarBtn(btn) {
                 case "hidden":
                         if (playPageStatus == 'shown') {
                             document.getElementById('Play-Page').className = 'hidden';
-                            document.getElementById('Main-Page').className = 'shown';
+                            document.getElementById('Home-Page').className = 'shown';
 
                             document.getElementById("Play-Button").className = "InActive";
                         };
@@ -48,9 +48,9 @@ function LeftBarBtn(btn) {
             };
         break;
         case "Shop-Button":
-            switch (mainPageStatus) {
+            switch (HomePageStatus) {
                 case "shown":
-                        document.getElementById("Main-Page").className = "hidden";
+                        document.getElementById("Home-Page").className = "hidden";
                         document.getElementById("Shop-Page").className = "shown";
 
                         document.getElementById("Shop-Button").className = "Active";
@@ -65,7 +65,7 @@ function LeftBarBtn(btn) {
                         };
                         if (shopPageStatus == 'shown') {
                             document.getElementById('Shop-Page').className = 'hidden';
-                            document.getElementById('Main-Page').className ='shown';
+                            document.getElementById('Home-Page').className ='shown';
 
                             document.getElementById("Shop-Button").className = "InActive";
                         };
@@ -87,9 +87,9 @@ function LeftBarBtn(btn) {
             };
         break;
         case "Loot-Button":
-            switch (mainPageStatus) {
+            switch (HomePageStatus) {
                 case "shown":
-                        document.getElementById("Main-Page").className = "hidden";
+                        document.getElementById("Home-Page").className = "hidden";
                         document.getElementById("Loot-Page").className = "shown";
 
                         document.getElementById("Loot-Button").className = "Active";
@@ -111,7 +111,7 @@ function LeftBarBtn(btn) {
                         };
                         if (lootPageStatus =='shown') {
                             document.getElementById('Loot-Page').className = 'hidden';
-                            document.getElementById('Main-Page').className ='shown';
+                            document.getElementById('Home-Page').className ='shown';
 
                             document.getElementById("Loot-Button").className = "InActive";
                         };
@@ -126,9 +126,9 @@ function LeftBarBtn(btn) {
             };
         break;
         case "Event-Button":
-            switch (mainPageStatus) {
+            switch (HomePageStatus) {
                 case "shown":
-                        document.getElementById("Main-Page").className = "hidden";
+                        document.getElementById("Home-Page").className = "hidden";
                         document.getElementById("Event-Page").className = "shown";
 
                         document.getElementById("Event-Button").className = "Active";
@@ -157,7 +157,7 @@ function LeftBarBtn(btn) {
                         };
                         if (eventPageStatus =='shown') {
                             document.getElementById('Event-Page').className = 'hidden';
-                            document.getElementById('Main-Page').className ='shown';
+                            document.getElementById('Home-Page').className ='shown';
 
                             document.getElementById("Event-Button").className = "InActive";
                         };

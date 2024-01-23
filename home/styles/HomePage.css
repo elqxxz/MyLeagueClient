@@ -3,7 +3,7 @@
     --TabsColor: #d6e1f1;
 }
 
-#Main-Page{
+#Home-Page{
     position: absolute;
     display: flex;
     width: 980px;
@@ -40,7 +40,7 @@
 }
 
 
-#MainContainer{
+#HomeContainer{
     position: absolute;
     width: 100%;
     height: auto;
