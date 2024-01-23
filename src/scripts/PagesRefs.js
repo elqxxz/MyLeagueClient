@@ -9,7 +9,7 @@ function LeftBarBtn(btn) {
 
     switch (btn.id) {
         case "Play-Button":
-            switch (mainPageStatus) {
+            switch (HomePageStatus) {
                 case "shown":
                         document.getElementById("Home-Page").className = "hidden";
                         document.getElementById("Play-Page").className = "shown";
