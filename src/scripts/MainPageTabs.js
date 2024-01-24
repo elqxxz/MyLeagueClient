@@ -1,4 +1,4 @@
-function BottomBarBtnClick(btn) {
+function HomeBottomBarBtnClick(btn) {
     const PatchNoteBtn = document.getElementById('PatchNoteBtn').className;
     const EsportsBtn = document.getElementById('EsportsBtn').className;
     const MerchBtn = document.getElementById('MerchBtn').className;

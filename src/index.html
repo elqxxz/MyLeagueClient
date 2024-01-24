@@ -10,6 +10,8 @@
 
     <script src="scripts/PagesRefs.js"></script>
     <script src="scripts/MainPageTabs.js"></script>
+    <script src="scripts/StatusChange.js"></script>
+    <script src="scripts/OnClickFunctions.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -34,8 +36,27 @@
         </div>
       </aside>
       <aside class="Right-bar">
-        <div class="Mini-profile"></div>
-        <div class="Friend-list"></div>
+        <div class="Mini-profile">
+          <div class="User">
+            <img src="images/6cf9475b5f89f19854b3620cf3ca448a3fd97145_full.jpg" alt="avatar" class="Avatar" />
+            <div class="User-Level">
+              <p id="UserLevel">337</p>
+            </div>
+            <div id="UserNameID" class="User-Name">
+              penisist#1337
+            </div>
+            <div class="User-Status">
+              <span class="text" id="StatusText" onclick="CustomStatusChanging()">online</span>
+              <ion-icon name="ellipse-outline" id="StatusIcon" onclick="ChangeActivStatus()"></ion-icon>
+              <form onsubmit="runScript();return false"  method="get" id="Forms">
+                <input type="text" id="CustomStatus" maxlength="15">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="Friend-list">
+
+        </div>
       </aside>
       <main>
         <div id="Home-Page" class="shown">
@@ -51,9 +72,9 @@
             </div>
           </div>
           <div id="BottomBar">
-            <button id="PatchNoteBtn" class="Active" onclick="BottomBarBtnClick(this)">Patch Notes</button>
-            <button id="EsportsBtn" class="InActive" onclick="BottomBarBtnClick(this)">Esports</button>
-            <button id="MerchBtn" class="InActive" onclick="BottomBarBtnClick(this)">Merch</button>
+            <button id="PatchNoteBtn" class="Active" onclick="HomeBottomBarBtnClick(this)">Patch Notes</button>
+            <button id="EsportsBtn" class="InActive" onclick="HomeBottomBarBtnClick(this)">Esports</button>
+            <button id="MerchBtn" class="InActive" onclick="HomeBottomBarBtnClick(this)">Merch</button>
           </div>
         </div>
         <div id="Play-Page" class="hidden">
